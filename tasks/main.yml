@@ -1,4 +1,8 @@
 ---
+- name: Define container_enabled
+  set_fact:
+    container_enabled: "{{ lookup('env', 'ANSIBLE_CONTAINER') | default(0) }}"
+    
 - include: setup-RedHat.yml
   when: ansible_os_family == 'RedHat'
 
