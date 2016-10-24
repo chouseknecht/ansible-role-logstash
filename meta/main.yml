@@ -1,16 +1,16 @@
 ---
-dependencies: []
+dependencies:
+  - geerlingguy.java
 
 galaxy_info:
-  author: geerlingguy
-  description: Logstash for Linux.
-  company: "Midwestern Mac, LLC"
-  license: "license (BSD, MIT)"
+  author: Chris Houseknecht
+  description: Install logstash on a Debian or Enterprise Linux OS. Originally forked from geerlingguy.logstash.
+  company: Ansible by Red Hat
+  license: Apache v2
   min_ansible_version: 1.8
   platforms:
     - name: EL
       versions:
-      - 6
       - 7
     - name: Debian
       versions:
